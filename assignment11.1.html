@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<p id="id">The Document Object Model(DOM) is a programing interface for HTML and XML document.
+	It represents the page so that programes can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page. </p>
+	<button type="button" onclick="myFunction()">Click me!</button>
+	<p id="class">A Web page is a document. The document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model(DOM) represents that same document so it can be manipulated. The DOM is an object-oriented represantation of the web page, which can be modified with a scripting language such as JavaScript.</p>
+	<button type="button" onclick="bgFun()">Background</button>
+	
+	
+
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById('id').style.color = "purple";
+		}
+		function bgFun(){
+			document.getElementById('class').style.color = "red";
+			document.getElementById('class').style.background = "yellow";
+		}
+	</script>
+</body>
+</html>
